@@ -30,7 +30,7 @@
 
 .team__card {
     width: 269px;
-    height: 347px;
+    height: 310px;
     flex-shrink: 0;
     border-radius: 33px;
     background: #FFF;
@@ -60,14 +60,7 @@
     color: #35A541;
     font-size: 14px;
     font-weight: 500;
-    margin: 0 0 5px;
-}
-
-.team__exp {
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0;
-    opacity: 0.8;
+    margin: 10px 0 10px;
 }
 
 .team__number {

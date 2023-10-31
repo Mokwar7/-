@@ -36,7 +36,7 @@
     opacity: 0.8;
     font-size: 18px;
     font-weight: 500;
-    margin: 5px 0 25px;
+    margin: 10px 0 25px;
 }
 
 .main__btn {
@@ -96,7 +96,7 @@
     }
 
     .main__subheader {
-        margin-bottom: 75px;
+        margin-bottom: 35px;
     }
 
     .main__header {
