@@ -87,5 +87,6 @@
         width: 270px;
         max-width: calc(95% - 30px);
         padding: 25px 15px;
+        text-align: center;
     }
 }
