@@ -15,7 +15,10 @@
 }
 
 .contacts__map {
-    max-width: calc(90% - 372px);
+    width: calc(90% - 372px);
+    border-radius: 30px;
+    object-fit: cover;
+    height: 100%;
     border-radius: 30px;
 }
 
@@ -64,6 +67,7 @@
     .contacts__map {
         max-width: 100%;
         width: 100%;
+        height: 400px;
     }
 }
 
