@@ -1,0 +1,126 @@
+.header {
+    width: 100%;
+    display: flex;
+    height: 90px;
+    border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+    justify-content: center;
+}
+
+.header__container {
+    width: 1024px;
+    max-width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    background-image: url('../src/logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 141px;
+    height: 70px;
+    transition: 0.3s ease-in-out;
+}
+
+.header__control {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header__links {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.header__link {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.header__toggle {
+    width: 65px;
+    height: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 197px;
+    border: 1px solid #2C3642;
+    cursor: pointer;
+}
+
+.header__toggle-dark {
+    background-image: url('../src/moon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 16px;
+    width: 16px;
+    padding: 2px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.header__toggle-light {
+    background-image: url('../src/toggleTheme.svg');
+    transform: rotate(0deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #35A541;
+    height: 18px;
+    width: 18px;
+    padding: 2px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.header__toggle_active {
+    background-color: #101010;
+    border: 1px solid #fff;
+}
+
+.header__toggle-dark_active {
+    background-image: url('../src/moon\ dark.svg');
+}
+
+.header__toggle-light_active {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        height: 100%;
+    }
+
+    .header__control {
+        gap: 5px;
+    }
+
+    .header__container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 0;
+        justify-content: start;
+    }
+}
+
+.header_dark {
+    background-color: #101010;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header_dark .header__logo {
+    background-image: url('../src/logo\ dark.svg');
+}
