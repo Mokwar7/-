@@ -1,0 +1,54 @@
+.avto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.avto__header {
+    margin-bottom: 30px;
+}
+
+.avto__img {
+    object-fit: cover;
+    width: 360px;
+    height: 270px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px 0px rgba(16, 16, 16, 0.25);
+    cursor: pointer;
+}
+
+.avto__img:hover {
+    box-shadow: 0px 4px 2px 0px rgba(16, 16, 16, 0.25);
+}
+
+.popup {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup_opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup__image {
+    max-width: 90%;
+    min-width: 50%;
+    object-fit: cover;
+}
